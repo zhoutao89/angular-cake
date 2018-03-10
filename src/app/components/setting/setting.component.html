@@ -1,0 +1,50 @@
+<div class="all">
+    <header>
+        <a routerLink="/mine">
+            <i class="icon ion-ios-arrow-back"></i>
+        </a>
+        <h1>用户设置</h1>
+        <span (click)="saveInfo()">保存</span>
+    </header>
+    <div id="main">
+        <div class="formgroup">
+            <div class="group">
+                <label for="username">用户</label>
+                <input type="text" [(ngModel)]="username" disabled="true" id="username" />
+            </div>
+            <div (click)="getGender($event)" class="gender">
+                <input type="radio" name="person" value="男" id="man"/><label for="man">先生</label>
+                <input type="radio" name="person" value="女" id="woman"/><label for="woman">女士</label>
+            </div>
+            <div class="group">
+                <label for="nickname">昵称</label>
+                <input type="text" placeholder="请输入昵称" [(ngModel)]="nickname" id="nickname" />
+            </div>
+            <div class="group">
+                <label for="birthday">生日</label>
+                <input type="text" placeholder="年—月—日" [(ngModel)]="birthday" id="birthday" />
+            </div>
+            <div class="group">
+                <label for="email">E-mail</label>
+                <input type="text" placeholder="请输入邮箱" [(ngModel)]="email" id="email" />
+            </div>
+            <div class="group">
+                <label for="area">所在地</label>
+                <input type="text" placeholder="必填" [(ngModel)]="area" id="area" />
+            </div>
+            <div class="group">
+                <label for="hobby">最爱产品</label>
+                <input type="text" placeholder="百利甜情人" [(ngModel)]="hobby" id="hobby" />
+            </div>
+        </div>
+        <div (click)="changePassword()" class="changePsw">
+            <span>修改密码</span>
+            <i class="icon ion-ios-arrow-forward"></i>
+        </div>
+    </div>
+    <div *ngIf="occupy" class="mask"></div>
+    <p *ngIf="occupy" class="hint">
+        <span (click)="close()">{{msg}}</span>
+    </p>
+    <footer (click)="out()">退出</footer>
+</div>

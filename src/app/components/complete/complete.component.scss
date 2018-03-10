@@ -1,0 +1,35 @@
+.complete{
+    height:100%;background:#eee;
+    .orderlist{
+        padding:0 0.14rem;border-bottom:0.013333rem solid #ddd;margin-bottom:1rem;background:#fff;
+        .orderhead{
+            height:1rem;line-height:1rem;font-size:0.4rem;display:flex;justify-content:space-between;border-bottom:0.013333rem solid #ddd;
+            .orderNo{font-size:0.35rem;}
+        }
+        li{
+            height:2.666666rem;
+            img{height:100%;float:left;}
+            div{
+                width:55%;height:100%;float:left;padding:0.2rem;font-size:0.35rem;line-height:0.9rem;color:#888;
+                h3{width:100%;font-size:0.4rem;color:#000;}
+                span{line-height:0.8rem;}
+            }
+            .price{width:20%;float:right;font-size:0.45rem;line-height:1rem;color:#f00;}
+            .price::before{content:"￥";}
+        }
+        .total{
+            height:1rem;line-height:1rem;font-size:0.4rem;position:relative;border-bottom:0.013333rem solid #ddd;
+            .money{position:absolute;right:5%;}
+        }
+        .gopay{height:1rem;line-height:1rem;font-size:0.45rem;text-align:center;border-bottom:0.013333rem solid #ddd;}
+        .orderInfo{
+            font-size:0.35rem;line-height:0.8rem;
+            >div{background:#fff;padding:0 0.15rem;}
+        }
+        .pay{
+            height:1rem;line-height:1rem;font-size:0.35rem;display:flex;justify-content:space-between;
+            >div{padding:0 0.15rem;}
+        }
+    }
+    .orderlist:last-child{margin:0;}
+}

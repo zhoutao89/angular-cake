@@ -1,0 +1,10 @@
+{
+    "footer" : 
+    [
+        {"url":"/home","icon":"icon ion-ios-home-outline","test":"首页"},
+        {"url":"/cakelist","icon":"icon ion-ios-keypad-outline","test":"分类"},
+        {"url":"/cakecar","icon":"icon ion-ios-cart-outline car","test":"购物车"},
+        {"url":"/community","icon":"icon ion-ios-chatbubble-outline","test":"社区"},
+        {"url":"/mine","icon":"icon ion-ios-person-outline","test":"我的"}
+    ]
+}

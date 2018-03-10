@@ -1,0 +1,40 @@
+<div class="title_top">
+    <i class="icon ion-chevron-left" routerLink="/order"></i>
+    编辑配送地址
+    <span (click)="save()" routerLink="/order">保存</span>
+</div>
+<div class="container">
+    <ul>
+        <li>
+            <label for="">姓名</label>
+            <div>
+                <input type="text" placeholder="收货人姓名" [(ngModel)]="name" />
+            </div>
+        </li>
+        <li>
+            <label for="">手机</label>
+            <div>
+                <input type="text" placeholder="收货人手机" [(ngModel)]="phone" />
+            </div>
+        </li>
+        <li>
+            <label for="">城市</label>
+            <div>
+                <input type="text" placeholder="填写所在城市" [(ngModel)]="city" />
+            </div>
+        </li>
+        <li>
+            <label for="">地址</label>
+            <div>
+                <input type="text" placeholder="路名,写字楼,小区" [(ngModel)]="address"/>
+            </div>
+        </li>
+        <li>
+            <div>
+                <input type="text" placeholder="门牌号" [(ngModel)]="house"/>
+            </div>
+
+        </li>
+
+    </ul>
+</div>

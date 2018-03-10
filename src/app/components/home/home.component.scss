@@ -1,0 +1,178 @@
+html,body{
+     height: 100%;
+}
+ .contain{
+     height: 100%;
+     display:flex;
+     flex-direction: column;
+     font-size: 0.3466666666666667rem;
+     header{
+    }
+     main{
+         flex:1;
+         overflow-x: hidden;
+         .swiper{
+             height: 4.533333333333333rem;
+             width: 100%;
+             background: #ddd;
+             position: relative;
+             ul{
+                 position: absolute;
+                 left: 0rem;
+                 li{
+                     img{
+                         height: 4.533333333333333rem;
+                    }
+                }
+            }
+        }
+         nav{
+             border-bottom:0.013333333333333334rem solid #ddd;
+             .onsale{
+                 ul{
+                     height: 0.6666666666666666rem;
+                     line-height: 0.6666666666666666rem;
+                     display:flex;
+                     justify-content:space-around;
+                }
+            }
+             .nav{
+                 margin-bottom: 0.18666666666666668rem;
+                 ul{
+                     display:flex;
+                     justify-content:space-around;
+                     li{
+                         display:flex;
+                         flex-direction: column;
+                         align-items:center;
+                         margin: 0.02666666666666667rem 0;
+                         img{
+                             margin-top: 0.10666666666666667rem;
+                             margin-bottom: 0.10666666666666667rem;
+                        }
+                         i{
+                             font-size: 0.4266666666666667rem;
+                        }
+                    }
+                }
+            }
+        }
+         .moods{
+             margin-top: 0.18666666666666668rem;
+             p{
+                 display:flex;
+                 justify-content:space-between;
+                 height: 0.6666666666666666rem;
+                 line-height: 0.6666666666666666rem;
+                 padding: 0 0.16rem;
+                 span{
+                     display:block;
+                     border:1px solid #ddd;
+                     width: 1.3333333333333333rem;
+                     height: 0.5333333333333333rem;
+                     text-align: center;
+                     line-height: 0.5333333333333333rem;
+                     border-radius:0.26666666666666666rem;
+                     background: #ddd;
+                     margin-top: 0.05333333333333334rem;
+                }
+            }
+             .moodsgoods{
+                 ul{
+                     display:flex;
+                     flex-wrap:wrap;
+                     li{
+                         width: 100%;
+                         padding: 0.13333333333333333rem 0;
+                         position: relative;
+                         height: 5.92rem;
+                         img{
+                             height: 4.666666666666667rem;
+                             width: 100%;
+                             margin-bottom: 0.05333333333333334rem;
+                        }
+                         span.car{
+                             display:block;
+                             background: #ddd;
+                             height: 0.5333333333333333rem;
+                             width: 0.5333333333333333rem;
+                             text-align: center;
+                             line-height: 0.6666666666666666rem;
+                             border-radius:50%;
+                             position: absolute;
+                             right: 0.26666666666666666rem;
+                             bottom: 0.13333333333333333rem;
+                        }
+                    }
+                }
+            }
+        }
+         .year{
+             margin-top: 0.18666666666666668rem;
+             border-top: 0.013333333333333334rem solid #ddd;
+             padding-top: 0.10666666666666667rem;
+             p{
+                 display:flex;
+                 justify-content:space-between;
+                 height: 0.6666666666666666rem;
+                 line-height: 0.6666666666666666rem;
+                 padding: 0 0.16rem;
+                 span{
+                     display:block;
+                     border:1px solid #ddd;
+                     width: 1.8666666666666667rem;
+                     height: 0.5333333333333333rem;
+                     text-align: center;
+                     line-height: 0.5333333333333333rem;
+                     border-radius:0.26666666666666666rem;
+                     background: #ddd;
+                     margin-top: 0.05333333333333334rem;
+                }
+            }
+             .yeargoods{
+                 ul{
+                     display:flex;
+                     flex-wrap:wrap;
+                     li{
+                         width: 100%;
+                         padding: 0.13333333333333333rem 0;
+                         position: relative;
+                         height: 5.92rem;
+                         img{
+                             height: 4rem;
+                             width: 100%;
+                             margin-bottom: 0.05333333333333334rem;
+                        }
+                         span.car{
+                             display:block;
+                             background: #ddd;
+                             height: 0.5333333333333333rem;
+                             width: 0.5333333333333333rem;
+                             text-align: center;
+                             line-height: 0.6666666666666666rem;
+                             border-radius:50%;
+                             position: absolute;
+                             right: 0.26666666666666666rem;
+                             bottom: 0.13333333333333333rem;
+                        }
+                    }
+                }
+            }
+        }
+         .mainfooter{
+             height: 1.3333333333333333rem;
+             padding-top: 0.6666666666666666rem;
+             padding-bottom: 0.26666666666666666rem;
+             padding-right: 0.26666666666666666rem;
+             span{
+                 float: right;
+                 i{
+                     font-size: 0.48rem;
+                }
+            }
+        }
+    }
+     footer{
+    }
+}
+ 

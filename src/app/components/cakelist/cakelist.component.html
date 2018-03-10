@@ -1,0 +1,18 @@
+<div class="containerlist">
+    <header>
+        <app-publicheader></app-publicheader>
+    </header>
+    <main>
+        <div class="moods">
+            <ul>
+                <li *ngFor="let obj of type; let idx=index" (click)="target(idx)" [class.active]="currentIdx==idx" [routerLink]="obj.url">{{obj.name}}</li>
+            </ul>
+        </div>
+        <div class="containerlist">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+    <footer>
+        <app-publicfooter></app-publicfooter>
+    </footer>
+</div>

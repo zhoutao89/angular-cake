@@ -1,0 +1,20 @@
+*{margin:0;padding:0;}
+.all{
+    height:100%;display:flex;flex-direction:column;
+    header{
+        height:1.2rem;line-height:1.2rem;border-bottom:0.03rem solid #ddd;position:relative;
+        i{position:absolute;left:5%;font-size:0.666666rem;color:#000;}
+        h1{position:absolute;left:40%;line-height:1.2rem;text-align:center;font-size:0.6rem;}
+    }
+    main{
+        flex:1;overflow-x:hidden;
+        .ordermenu{
+            display:flex;justify-content:space-between;border-bottom:0.013333rem solid #ddd;
+            li{
+                width:50%;height:1rem;line-height:1rem;font-size:0.45rem;text-align:center;
+                span{display:inline-block;height:100%;}
+                .active{height:100%;font-weight:bold;color:#666;border-bottom:0.06rem solid #666;}
+            }
+        }
+    }
+}

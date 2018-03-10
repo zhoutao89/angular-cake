@@ -1,0 +1,46 @@
+<div class="unfinished">
+    <ul  *ngFor="let item of dataset; let idx=index; trackBy:trackById;" id="{{item.id}}" class="orderlist">
+        <div class="orderhead">
+            <p class="orderNo">{{data[idx]['orderid']}}</p>
+            <span (click)="cancle(idx)" class="cancle">交易取消</span>
+        </div>
+        <li  *ngFor="let key of item; trackBy:trackById" id="{{key.id}}">
+            <img src="{{key.imgurl}}" />
+            <div>
+                <h3>{{key.chinaName}}</h3>
+                <span class="size">{{key.sta}}</span> &times;
+                <span class="num">{{key.qty}}</span>
+            </div>
+            <p class="price">{{key.price}}</p>
+        </li>
+        <div class="total">
+            <span class="money">未支付：{{'￥ '+data[idx]['total']}}</span>
+        </div>
+        <div (click)="goPay(idx)" class="gopay">去支付</div>
+        <div *ngFor="let list of useraddress; let idx=index; trackBy:trackById" id="{{list.id}}" class="orderInfo">
+            <div>
+                                           送货时间： <span>1天后</span>
+            </div>
+            <div>
+                        收货人： <span>{{useraddress[idx]['name']}}</span>
+            </div>
+            <div>
+                        联系电话： <span>{{useraddress[idx]['phone']}}</span>
+            </div>
+            <div>
+                        收货地址： <span>{{useraddress[idx]['city']}} {{useraddress[idx]['address']}}</span>
+            </div>
+        </div>
+        <div class="pay">
+            <div>
+                        支付方式： <span>微信</span>
+            </div>
+            <div>
+                        支付状态： <span>未支付</span>
+            </div>
+        </div>
+    </ul>
+    <p *ngIf="occupy" class="hint">
+        <span (click)="closehint()">{{msg}}</span>
+    </p>
+</div>

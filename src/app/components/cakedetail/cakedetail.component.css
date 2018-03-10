@@ -1,0 +1,71 @@
+.cakedelPage{width: 100%;height: 100%;display:flex;flex-direction: column; position:relative;}
+.cakedel_head{height: 1.253333rem;color:#000;font-size: .453333rem;text-align: center;font-weight: bold;line-height: 1.253333rem;position:relative;}
+.cake_head_left{position:absolute;top:0;left:.213333rem;font-size: .613333rem;width: .666667rem;height: 100%;}
+.cake_head_right{position:absolute;top:0;right:.213333rem;font-size: .9rem;}
+.cakedel_main{flex:1;overflow-x:hidden;background: #fff;position: relative;}
+
+.delImg{margin-bottom:.24rem;overflow: hidden;height:10rem;}
+.delImg li{float: left;width: 100%;height: 10rem;}
+.delImg img{width: 100%;height: 10rem;}
+.enName{font-size: .613333rem;line-height: .72rem;color:#373737;font-weight: bold;padding-left: .666667rem;}
+.cnName{font-size: .346667rem;line-height: .426667rem;color:#474747;padding-left:.666667rem;}
+.cakedel_price{display:inline-block;font-size: .453333rem;color:#C29F79;line-height: .906667rem;padding-left:.76rem;}
+.cakedel_classify span{display:inline-block;margin:.16rem;padding:0 .346667rem;border-radius: .273333rem;font-size:.32rem;color:#C29F79;line-height: .533333rem;border:.013333rem solid #C29F79;}
+.cakedel_classify span:nth-child(1){margin-left:.666667rem;}
+
+.cakedel_main_c{margin:.373333rem .48rem .506667rem;background: #fff;border-radius: .4rem;box-shadow: 0 0 .666667rem .16rem #eaeaea;}
+.cakedel_main_ct{border-radius: .166667rem .166667rem 0 0;position: relative;background: rgb(228, 193, 111);font-size: .32rem;line-height: 1.32rem;height: 1.173333rem;color:#000;padding-left:.426667rem;}
+.cakedel_main_ct i{font-size: .426667rem;color:#000;position: absolute;top:0;right:.426667rem;}
+.cakedel_main_cc{height: 1.826667rem;margin:.373333rem .426667rem .08rem;border-bottom:.026667rem solid #D7D7D7;}
+.cakedel_main_cc span{display: inline-block;font-size: .32rem;color:#313131;width: 48%;line-height: .693333rem;padding-left:.613333rem;position:relative;}
+.cakedel_main_cc span i{position:absolute;top:0;left:0;font-size: .426667rem;color:#939393;}
+.cakedel_main_cc span:nth-child(3) i{top:0;left:.133333rem;}
+.cakedel_main_cb{padding:.226667rem .426667rem ;}
+.cakedel_main_cb div{font-size:.346667rem ;color:#6D6D6D;line-height: .693333rem;padding-left:.893333rem;position:relative;}
+.cakedel_main_cb div i{position:absolute;top:50%;left:0;transform: translate(.066667rem,-.426667rem);font-size: .853333rem;color:#BDE3E4;}
+.cakedel_main_cb .tiandu{position: absolute;top:50%;left:0;transform: translate(0,-.213333rem);width: .426667rem;height: .426667rem;padding-left:.066667rem;}
+.cakedel_main_cb .sweetShow{display: inline-block;padding-left:.32rem;}
+
+.tianchong{background:#F6F6F6;margin-top:.005333rem;height: .333333rem;}
+
+.cakedel_main_b h4{text-align: center;height: .56rem;line-height: .56rem;font-weight: bold;color:rgb(243, 94, 8);font-size: .4rem}
+.cakedel_main_b img{width: 100%;float: left;}
+
+.cakedel_notice{background:#F6F6F6;text-align: center;height: .4rem;line-height: .4rem; }
+
+.cakedel_foot{overflow: hidden;margin-bottom:0;}
+.cakedel_foot li{height:1.173333rem;float: left;}
+.cakedel_foot_l{width: 1.506667rem;border-right:.026667rem solid #F0F0F0;position:relative;}
+.cakedel_foot_l i{width: .48rem;height: .48rem;font-size: .453333rem;color:#000;position:absolute;top:50%;left:50%;transform: translate(-.24rem,-.24rem)}
+.cakedel_foot_c{width: 4.24rem;color:#000;font-size:.453333rem;text-align: center;line-height:1.173333rem;font-weight: bold;}
+.cakedel_foot_r{width: 4.226667rem;background: #000;color:#fff;font-size:.453333rem;text-align: center;line-height:1.173333rem;}
+
+.mainDel_share{width: 100%;height: 4.68rem;position: fixed;top:1.203333rem;left:0;background: #F1F1F1;}
+.mainDel_share h3{font-size: .4rem;color:#A2A2A2;text-align: center;line-height: 1.973333rem;}
+.mainDel_share .mainDel_shareOne{padding-left:2.066667rem;}
+.mainDel_share div{display: inline-block;padding:0 .4rem 0 0;}
+.mainDel_share span{display: block;font-size: .32rem;line-height: .586667rem;color:#787878;text-align: center;}
+.modal{width:100%;background: none;}
+
+.buyTC{position:fixed;top:30%;}
+.buyshow{padding:0 .8rem 0 .613333rem;}
+.close{position: absolute;top: 0;right: .266667rem;font-size: .613333rem;}
+.buyshow .modal-title{font-size: .32rem;line-height: 1.173333rem;color:#E18266;font-weight: bold;}
+.buyshow_ct{overflow: hidden;padding-top:.08rem;}
+.buyshow_ctl{float:left;}
+.buyshow_ctl img{width: 4.866667rem;height: 2.2rem;}
+.buyshow_ctr{float:right;}
+.buyshow_ctr span{display: block;color:#313131;font-size: .32rem;line-height: .64rem;padding-left:.8rem;position: relative;}
+.buyshow_ctr span i{position: absolute;top:0;left:.4rem;width: .4rem;height: .4rem;color:#959595;font-size: .32rem;}
+.buyshow_cct{color:#000;font-size: .373333rem;line-height: 1.173333rem;margin-top:.173333rem;font-weight: bold;}
+.buyshow_csel{margin-bottom:.266667rem;}
+.buyshow_csel span{position:relative;font-size: .4rem;display:inline-block;color:#000;padding:.223333rem .625rem;background: #F4F4F4;margin-right:.186667rem;}
+.buyshow_b{margin-bottom:.4rem;}
+.nowBuyBtn{background:#FF9326;width: 80%;display:block;text-align: center;font-size: .453333rem;line-height: .8rem;color: #fff;border-radius: .666667rem;margin: 0 auto;}
+
+.selectGuige{border:.026667rem solid #000;}
+.selectGou{position: absolute;top:0;left:0;width: .346667rem;height: .446667rem;background: #000;font-size: .346667rem;color:#fff;}
+
+#loadingImg{position: fixed;top:50%;left:50%;width:2rem;height:2rem;transform: translate(-1rem,-1rem)}
+
+.cartNum{position: absolute;top:30%;left:50%;width: .346667rem;height: .346667rem;background: rgb(243, 81, 5);font-size: .266667rem;color:#fff;border-radius: .173333rem;text-align: center;line-height: .346667rem;}

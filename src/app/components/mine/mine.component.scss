@@ -1,0 +1,68 @@
+.all{
+    height:100%;display:flex;flex-direction:column;
+    /*header{height:1.066666rem;background:#f00;}*/
+    .container_zt{
+        flex:1;display:flex;flex-direction:column;justify-content:space-between;overflow-x:hidden;background:#eee;
+        .message{
+            .enter{
+            	height:3.5rem;background:#C3BAB5;padding-top:0.88rem;
+            	.login_register{
+            		position:relative;width:80%;height:1.5rem;background:#fff;margin:auto;
+            		.touxiang{
+            			position:absolute;left:5%;bottom:0;width:2rem;height:2rem;background:#ccc;text-align:center;line-height:1.5rem;font-size:1.8rem;border-radius:50%;border:0.066666rem solid #fff;color:#888;
+            		}
+            		.showback{background:#444;}
+            		.enter_in{
+            			position:absolute;width:4rem;height:100%;left:42%;line-height:1.5rem;font-size:0.45rem;color:#444;
+            		}
+            		.arror{font-size:0.7rem;position:absolute;right:1%;top:28%;width:5%;height:100%;}
+            	}
+            }
+            .money{
+	            height:1.466666rem;display:flex;border-bottom:1px solid #ddd;background:#fff;margin-bottom:0.266666rem;
+	            .discounts,.balance{
+	                width:50%;border-right:0.013333rem solid #ddd;display:flex;flex-direction:column;color:#666;
+	                justify-content:space-around;padding:0.266666rem 0;text-align:center;font-size:0.3rem;
+	                span{font-size:0.4rem;font-weight:bold;color:#000;}
+	            }
+	            .balance{
+	                width:50%;border-right:0 none;
+	            }
+	            .balance span::before{content:"￥";}
+	        }
+        }
+        
+        .inFo{
+        	background:#fff;margin-bottom:0.266666rem;
+        	li{
+        		height:1.2rem;display:flex;line-height:1.2rem;font-size:0.7rem;color:#aaa;padding-right:6%;
+        		.inFo_l{
+        			width:15%;text-align:center;color:#888;
+        		}
+        		.inFo_r{
+        			width:85%;display:flex;justify-content:space-between;border-bottom:0.013333rem solid #444;
+        			span{font-size:0.4rem;color:#000;}
+        		}
+        	}
+        }
+        .others{
+        	background:#fff;padding:0 5%;margin-bottom:0.266666rem;
+        	li{
+        		height:1.173333rem;display:flex;justify-content:space-between;
+        		line-height:1.173333rem;font-size:0.4rem;border-bottom:0.013333rem solid #444;
+        		i{font-size:0.7rem;color:#aaa;}
+        		.edition{font-size:0.4rem;}
+        	}
+        }
+        .serviceTel{
+        	height:0.933333rem;dispaly:flex;font-size:0.4rem;line-height:0.933333rem;background:#fff;text-align:center;
+        	.serviceTel_l{
+        		width:80%;float:left;border-right:0.013333rem solid #ddd;
+        	}
+        	.serviceTel_r{
+        		width:20%;float:left;font-size:0.566666rem;
+        	}
+        }
+    }
+    
+}

@@ -1,0 +1,274 @@
+/* 
+* @Author: Marte
+* @Date:   2018-03-03 14:25:18
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-03-03 14:25:18
+*/
+.all{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    .title_box{
+    background: #fff;
+    height: 1.28rem;
+    line-height: 1.28rem;
+    position: relative;
+    box-shadow: 0px 0.053333rem 0.106667rem 0px rgba(0,0,0,0.10);
+    font-size: 0.453333rem;
+    text-align: center;
+    i{
+                    position:absolute;
+                    font-size: 0.5rem;
+                    left:0.373333rem;
+    }
+}
+
+.container{
+    flex:1;
+    overflow-x: hidden;
+    .cart{
+        height: 1.013333rem;
+        line-height: 1.013333rem;
+        text-align: center;
+        font-size: 0.42rem;
+        background: #F1F1F1;
+    }
+
+    .car_list{
+        margin-top: 0.266667rem;
+
+        li{
+            background: #fff;
+            margin-bottom: 0.4rem;    
+            padding: 0 0.533333rem;
+            padding-bottom: 0.4rem;
+            position: relative;
+
+            .car_box{
+                height: 3.2rem;
+                .car_left{
+                    float: left;
+                     img{
+                            display: block;
+                            
+                            width: 2.906667rem;
+                            height: 3.2rem;
+                    }
+                }
+
+                .car_right{
+                    float: left;
+                    padding-left:0.48rem;
+                    padding-top:0.533333rem;
+                    font-size: 0.32rem ;
+
+                    .car_r1{
+                        color: #442818;
+                    }
+
+                    .car_r2{
+                        padding-top: 0.133333rem;
+                        color: #442818;
+
+                    }
+
+                    .car_r3{
+                        padding-top: 0.133333rem;
+                        
+                        color: #969696;
+                    }
+
+                    .car_r4{
+                        margin-top: 0.32rem;
+                        color: #969696;
+                    }
+                }
+
+                .car_nub{
+                    position:absolute;
+                    height: 0.693333rem;
+                    width:2.08rem;
+                    top:2.0rem;
+                    right:0.533333rem;
+
+                    button{
+                        height: 0.693333rem;
+                        width:0.693333rem;
+                        float:left;
+                        font-size: 0.32rem;
+                    }
+
+                    input{
+                        height: 0.693333rem;
+                        width:0.693333rem;
+                        float:left;
+                        background: #F7F7F7;
+                        color: #969696;
+                        font-size: 0.32rem;
+                        line-height: 26px;
+                        text-align: center;
+                    }
+                }
+
+
+               
+            }
+
+            .laid_count{
+                    height: 1.226667rem;
+                    line-height: 1.226667rem;
+                    padding-left: 1.466667rem;
+                    font-size: 0.32rem;
+                    background: url(../../../assets/img/c1.png) no-repeat left;
+                    background-size: 1.226667rem 1.226667rem;
+
+                    span{
+                        margin-left: 3.566667rem;
+                    }
+                    
+                    
+            }
+
+            .laid_day{
+                line-height: 0.8rem;
+                padding-left: 2.133333rem;
+                height: 0.8rem;
+                background: url(../../../assets/img/c2.jpg) no-repeat left;
+                background-size: 1.76rem 0.8rem ,0.213333rem 0.32rem;
+                color: #707070;
+                font-size: 0.32rem;
+            }
+        }
+    }
+
+    .good_reo{
+        margin-bottom: 15px;
+        position: relative;
+        display:flex;
+        width:100%;
+        flex-wrap: wrap;
+        li{
+            
+            
+            justify-content: space-between;
+            width: 48.2%;
+            background: #fff;
+            margin-left: 1.2%;
+            margin-bottom: 1.2%;
+            float: left;
+            position: relative;
+            padding-bottom: 0.48rem;
+            font-size: 0.32rem;
+            color: #442818;
+
+            .good_top{
+                    width: 2.933333rem;
+                    height: 3.226667rem;
+                    margin: 0 auto;
+                    img{
+                            display: block;
+                            max-width: 2.933333rem;
+                            max-height: 3.226667rem;
+                    }
+            }
+
+            .good_bottom{
+                    margin-left: 0.293333rem;
+                    line-height: 0.4rem;
+                    h4{
+                        color: #442818;
+                        font-weight: bold;
+                        font-size: 0.346667rem;
+                    }
+
+                    span{
+                        font-size: 0.346667rem;
+                        color: #969696;
+                        display: block;
+                        margin-top: 0.106667rem;
+                        height: 0.373333rem;
+                    }
+            }
+
+            .buycar{
+                position:absolute;
+                right: 0.48rem;
+                bottom: 0.48rem;
+                margin-left: 0.293333rem;
+            }
+
+            .acc{
+                height: 0.8rem;
+                color: #d9b27f;
+                margin-top: 0;
+                padding-top: 2px;
+                width: 0.48rem;
+                border: 0.026667rem solid #c79350;
+                color: #d9b27f;
+                position: absolute;
+                left: -0.226667rem;
+                margin-left: 0.533333rem;
+                text-align: center;
+                line-height: 0.373333rem;
+                top:0.066667rem;
+            }
+        }
+    }
+
+    
+}
+
+.footer{
+    height:2.333333rem;
+    .place_bottom{
+        
+        height: 1.173333rem;
+        overflow: hidden;
+        background: #fff;
+       
+       
+       
+        width: 100%;
+        z-index: 1000000;
+        box-shadow: 0px -0.053333rem 0.106667rem 0px rgba(0,0,0,0.10);
+
+        button{
+            
+                display: block;
+                float: right;
+                height: 1.173333rem;
+                width: 2.56rem;
+                line-height: 1.173333rem;
+                text-align: center;
+                color: #fff;
+                background: #442818;
+                font-size: 0.32rem;
+        }
+
+        .shop{
+                float:right;
+                margin-right: 0.32rem;
+                .shop1{
+                        margin-top: 0.133333rem;
+                        display: inline-block;
+                        font-size: 0.426667rem;
+                        font-weight: bold;
+                        line-height: 0.426667rem;
+                        text-align: right;
+                }
+
+                .shop2{
+                        display: block;
+                        color: #707070;
+                        font-size: 0.266667rem;
+                        line-height: 0.426667rem;
+                        text-align: right;
+                }
+                
+        }
+    }
+        
+}
+}
+
+

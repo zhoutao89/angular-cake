@@ -1,0 +1,42 @@
+<div class="complete">
+    <ul *ngFor="let item of dataset; let idx=index; trackBy:trackById;" id="{{item.id}}" class="orderlist">
+        <div class="orderhead">
+            <p class="orderNo">{{data[idx]['orderid']}}</p>
+        </div>
+        <li  *ngFor="let key of item; trackBy:trackById" id="{{key.id}}">
+            <img src="{{key.imgurl}}" />
+            <div>
+                <h3>{{key.chinaName}}</h3>
+                <span class="size">{{key.sta}}</span> &times;
+                <span class="num">{{key.qty}}</span>
+            </div>
+            <p class="price">{{key.price}}</p>
+        </li>
+        <div class="total">
+            <span class="money">已支付：{{'￥ '+data[idx]['total']}}</span>
+        </div>
+        <div routerLink="/home" class="gopay">继续购物</div>
+        <div class="orderInfo">
+            <div>
+                        送货时间： <span>a</span>
+            </div>
+            <div>
+                        收货人： <span>b</span>
+            </div>
+            <div>
+                        联系电话： <span>c</span>
+            </div>
+            <div>
+                        收货地址： <span>d</span>
+            </div>
+        </div>
+        <div class="pay">
+            <div>
+                        支付方式： <span>e</span>
+            </div>
+            <div>
+                        支付状态： <span>已支付</span>
+            </div>
+        </div>
+    </ul>
+</div>

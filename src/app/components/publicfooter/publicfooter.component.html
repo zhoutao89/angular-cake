@@ -1,0 +1,8 @@
+<footer>
+    <ul>
+        <li *ngFor="let obj of data;let idx=index" [routerLink]="obj.url" (click)="color($event)">
+            <span [class]="obj.icon"></span>
+            <span  id="car">{{obj.test}}</span>
+        </li>
+    </ul>
+</footer>

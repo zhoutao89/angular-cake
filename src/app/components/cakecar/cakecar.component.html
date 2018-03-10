@@ -1,0 +1,60 @@
+<div class="all">
+
+    <div class="title_box"><i class="icon ion-chevron-left" routerLink="/home"></i>购物车</div>
+
+<div class="container">
+    <p class="cart">· 满100元免配送服务费 ·</p>
+    <ul class="car_list" >
+        <li *ngFor="let obj of dataset;let idx = index;" class="clearfix">
+            <div class="car_box" >
+                <div class="car_left">
+                    <img src={{obj.imgurl}} alt="" />
+                </div>
+                <div class="car_right">
+                    <div class="car_r1">{{obj.EnglishName}}</div>
+                    <div class="car_r2">{{obj.chinaName}}</div>
+                    <div class="car_r3">规格:{{obj.sta}}磅</div>
+                    <div class="car_r4">￥{{obj.price}}</div>
+                </div>
+                <div class="car_nub">
+                    <button (click)="jian(idx,obj.carid)" id={{obj.carid}}>-</button>
+                    <input type="text"  [(ngModel)]="len[idx]" />
+                    <button (click)="zeng(idx,obj.carid)" id={{obj.carid}}>+</button>
+                </div>
+
+            </div>
+            <p class="laid_count">每份含免费餐具10套<span (click)="del(obj.carid)" ><img src="../../../assets/img/c7.png" height="30" width="30"  id={{obj.carid}}/></span></p>
+            <p class="laid_day">+
+                        添加生日牌</p>
+        </li>
+    </ul>
+    <p class="cart">推荐商品</p>
+    <ul class="good_reo" >
+        <li *ngFor="let key of datalist;">
+            <div class="good_top">
+                <img src={{key.imgurl}} alt="" id="{{key.id}}"  class="pink" (click)="self(key.id)"/>{{key.carid}}
+            </div>
+            <div class="good_bottom">
+                <h4>{{key.ChinaName}}</h4>
+                <span>￥{{key.price}}</span>
+            </div>
+            <div class="buycar">
+                <img src="../../../assets/img/c5.png" alt="" (click)="car(key.id)" id="{{key.id}}"/>
+            </div>
+            <span class="acc">配件</span>
+        </li>
+    </ul>
+    
+</div>
+<div class="footer">
+    <div class="place_bottom">
+        <button routerLink="/order">下单</button>
+        <div class="shop">
+            <span class="shop1">￥{{totalPrice}}</span>
+            <span class="shop2">商品</span>
+        </div>
+    </div>
+    <app-publicfooter></app-publicfooter>
+</div>
+</div>
+

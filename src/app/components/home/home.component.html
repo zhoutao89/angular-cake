@@ -1,0 +1,126 @@
+<div class="contain">
+    <header>
+        <app-publicheader></app-publicheader>
+    </header>
+    <main>
+        <div class="swiper">
+            <ul>
+                <li>
+                    <img src="../../../assets/img/banner01.jpg"alt="" class="img"/>
+                </li>
+                <li>
+                    <img src="../../../assets/img/banner02.jpg"alt="" class="img"/>
+                </li>
+                <li>
+                    <img src="../../../assets/img/banner03.jpg"alt="" class="img"/>
+                </li>
+                <li>
+                    <img src="../../../assets/img/banner04.jpg"alt="" class="img"/>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <div class="onsale">
+                <ul>
+                    <li routerLink="/cakelist">
+                        <i class="icon ion-ios-circle-outline"></i>
+                        <span>新人首单赠小切块</span>
+                    </li>
+                    <li routerLink="/cakelist">
+                        <i class="icon ion-ios-circle-outline"></i>
+                        <span>满百包邮</span>
+                    </li>
+                    <li routerLink="/cakelist">
+                        <i class="icon ion-ios-circle-outline"></i>
+                        <span>千万用户选择</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li routerLink="/cakelist/cakeclassify">
+                        <img src="../../../assets/img//nav01.jpg" alt="" />
+                        <span>蛋糕</span>
+                    </li>
+                    <li routerLink="/cakelist/coffee">
+                        <img src="../../../assets/img/nav02.jpg" alt="" />
+                        <span>咖啡</span>
+                    </li>
+                    <li routerLink="/cakelist/slicingclassify">
+                        <img src="../../../assets/img/nav03.jpg" alt="" />
+                        <span>小切块</span>
+                    </li>
+                    <li routerLink="/cakelist/gift">
+                        <img src="../../../assets/img/nav04.jpg" alt="" />
+                        <span>企业专区</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="moods" (click)="car($event)">
+            <p>
+                <span routerLink="/cakelist">人气</span>
+                <a href="#" routerLink="/cakelist">更多</a>
+            </p>
+            <div class="moodsgoods">
+                <ul>
+                    <li *ngFor="let item of moodsData;trackBy:trackById" id="{{item.id}}">
+                        <img [src]="item.imgurl" alt="" />
+                        <span>{{item.ChinaName}}</span>   
+                        <span>{{item.price}}/2.0磅</span><br />
+                        <span>{{item.changjing}}</span> 
+                        <span class="car">
+                            <i class="icon ion-ios-cart-outline"></i>
+                        </span>  
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="year" (click)="car($event)">
+            <p>
+                <span routerLink="/cakelist">新品</span>
+                <a href="#" routerLink="/cakelist">更多</a>
+            </p>
+            <div class="yeargoods">
+                <ul>
+                    <li *ngFor="let item of moodsData;trackBy:trackById" id="{{item.id}}">
+                        <img [src]="item.imgurl" alt="" />
+                        <span>{{item.ChinaName}}</span>   
+                        <span>{{item.price}}/2.0磅</span><br />
+                        <span>{{item.changjing}}</span>
+                        <span class="car">
+                            <i class="icon ion-ios-cart-outline"></i>
+                        </span>   
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="year" (click)="car($event)">
+            <p>
+                <span routerLink="/cakelist">年货专区</span>
+                <a href="#" routerLink="/cakelist">更多</a>
+            </p>
+            <div class="yeargoods">
+                <ul>
+                    <li *ngFor="let item of yearData;trackBy:trackById" id="{{item.id}}">
+                        <img [src]="item.imgurl" alt="" />
+                        <span>{{item.ChinaName}}</span>   
+                        <span>{{item.price}}/2.0磅</span><br />
+                        <span>{{item.changjing}}</span>  
+                        <span class="car">
+                            <i class="icon ion-ios-cart-outline"></i>
+                        </span> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mainfooter">
+            <span>没了<i class="icon ion-wand"></i></span>
+        </div>
+    </main>
+    <footer>
+        <app-publicfooter></app-publicfooter>
+    </footer>
+</div>
+
+

@@ -1,0 +1,37 @@
+<div class="all">
+    <header>
+        <a routerLink="/login">
+            <i class="icon ion-ios-arrow-back"></i>
+        </a>
+        <h1>注册</h1>
+    </header>
+    <main>
+        <div class="register_group">
+            <div>
+                <label for="username">用戶名：</label>
+                <input type="text" #username (blur)="checkUsername(username.value)" placeholder="请输入11位手机号" id="username"/>
+            </div>
+            <div>
+                <label for="password">密码：</label>
+                <input type="password" #password placeholder="请输入6位以上非空格字符" id="password"/>
+            </div>
+            <button (click)="signIn(username.value,password.value)">注册</button>
+        </div>
+        <a routerLink="/login"><button>已有帐号?现在登录</button></a>
+    </main>
+    <div *ngIf="occupy" class="mask"></div>
+    <p *ngIf="occupy" class="hint">
+        <span (click)="close()">{{msg}}</span>
+    </p>
+    
+    <!--<div id="box">sassdasd</div>-->
+    <!--<p [ngSwitch]="msg" class="hint">
+        <span *ngSwitchCase="'用户名已被占用'" (click)="close($event)">用户名已被占用</span>
+        <span *ngSwitchCase="'用户名格式错误'" (click)="close($event)">用户名格式错误</span>
+    </p>-->
+    
+    <!--<div class="demo" [el-loading]="true" [full-screen]="true" [text]="'玩命加载中'">
+        <el-tag>加载中..</el-tag>
+    </div>-->
+</div>
+

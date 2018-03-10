@@ -1,0 +1,26 @@
+<div class="all">
+	<header>
+		<a routerLink="/mine">
+		    <i class="icon ion-ios-arrow-back"></i>
+		</a>
+		<h1>登陆</h1>
+	</header>
+	<main>
+	    <div class="login_group">
+	        <div>
+	            <label for="username">用戶名：</label>
+                <input type="text" #username id="username"/>
+	        </div>
+	        <div>
+                <label for="password">密码：</label>
+                <input type="password" #password id="password"/>
+            </div>
+            <button (click)="loginIn(username.value,password.value)">登录</button>
+	    </div>
+	    <a routerLink="/register"><button>没有帐号?现在注册</button></a>
+	</main>
+	<div *ngIf="occupy" class="mask"></div>
+    <p *ngIf="occupy" class="hint">
+        <span (click)="close()">{{msg}}</span>
+    </p>
+</div>

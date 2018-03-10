@@ -1,0 +1,31 @@
+<header>
+    <ul class="navs">
+        <li (click)="menu($event)">
+            <i [class]="iconfont"></i>
+        </li>
+        <li>
+            <img src="../../../assets/img/logo.jpg" height="65" width="73" alt="" />
+        </li>
+        <li>
+            <i class="icon ion-ios-location"></i>
+            <span>广州</span>
+        </li>
+    </ul>
+    <div  class="shows">
+        <ul>
+            <li routerLink="/home">
+                <i class="icon ion-ios-home-outline"></i>
+                <span>首页</span> 
+            </li>
+            <li routerLink="/cakelist">
+                <i class="icon ion-ios-keypad-outline"></i>
+                <span>分类</span>
+            </li>
+            <li routerLink="/mine">
+                <i class="icon ion-ios-person-outline"></i>
+                <span>我的</span>
+            </li>
+        </ul>
+    </div>
+</header>
+

@@ -1,0 +1,15 @@
+<div class="all">
+    <header>
+        <a routerLink="/mine">
+            <i class="icon ion-ios-arrow-back"></i>
+        </a>
+        <h1>我的订单</h1>
+    </header>
+    <main>
+        <ul class="ordermenu">
+            <li><span routerLink="unfinished" [class.active]="heightlight1" (click)="addBorder1()">未完成</span></li>
+            <li><span routerLink="complete"  [class.active]="heightlight2" (click)="addBorder2()">已完成</span></li>
+        </ul>
+        <router-outlet></router-outlet>
+    </main>
+</div>

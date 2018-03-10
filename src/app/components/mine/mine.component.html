@@ -1,0 +1,71 @@
+<div class="all">
+    <!--<header>
+        mineComponent
+    </header>-->
+    <div class="container_zt">
+        <div class="message">
+        	<div class="enter">
+        		<!--<a routerLink="/login">-->
+        		<div class="login_register" (click)="setting()">
+        			<div [class.showback]='changecolor' class="touxiang">
+        				<i class="icon ion-ios-person"></i>
+        			</div>
+        			<div class="enter_in">
+        			     {{user}}
+        			</div>
+        			<div class="arror">
+        			   <i class="icon ion-ios-arrow-forward"></i>
+        			</div>
+        		</div>
+        		<!--</a>-->
+        	</div>
+            <div class="money">
+	            <div class="discounts">
+	                <span>0张</span>
+	                <i>优惠券</i>
+	            </div>
+	            <div class="balance">
+	                <span>0.00</span>
+	                <i>余额</i>
+	            </div>
+	        </div>
+        </div>
+        
+        <ul class="inFo">
+        	<li (click)="gomyorder()">
+        		<div class="inFo_l"><i class="icon ion-folder"></i></div>
+        		<div class="inFo_r"><span>我的订单</span><i class="icon ion-ios-arrow-forward"></i></div>
+        	</li>
+        	<li (click)="goaddress()">
+        		<div class="inFo_l"><i class="icon ion-female"></i></div>
+        		<div class="inFo_r"><span>地址管理</span><i class="icon ion-ios-arrow-forward"></i></div>
+        	</li>
+        	<li>
+        		<div class="inFo_l"><i class="icon ion-backspace"></i></div>
+        		<div class="inFo_r"><span>优惠券</span><i class="icon ion-ios-arrow-forward"></i></div>
+        	</li>
+        	<li>
+        		<div class="inFo_l"><i class="icon ion-chatboxes"></i></div>
+        		<div class="inFo_r"><span>余额充值</span><i class="icon ion-ios-arrow-forward"></i></div>
+        	</li>
+        </ul>
+        <ul class="others">
+        	<li><span>用户反馈</span><i class="icon ion-ios-arrow-forward"></i></li>
+        	<li><span>用户协议</span><i class="icon ion-ios-arrow-forward"></i></li>
+        	<li><span>版本</span><i class="edition">2.8</i></li>
+        	<li><span>关于</span><i class="icon ion-ios-arrow-forward"></i></li>
+        </ul>
+        <div class="serviceTel">
+        	<div class="serviceTel_l">
+        		客服电话400 650 2020
+        	</div>
+        	<div class="serviceTel_r">
+        		<i class="icon ion-android-call"></i>
+        	</div>
+        </div>
+    </div>
+    <footer>
+        <app-publicfooter></app-publicfooter>
+    </footer>
+</div>
+

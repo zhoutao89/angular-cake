@@ -1,0 +1,15 @@
+<div class="goods">
+    <ul>
+        <li *ngFor="let obj of cakeclassify;let idx=index"id="{{idx}}" (click)=detail($event,obj)>
+            <img [src]="obj.imgurl" alt="" />
+            <p>
+                <span>{{obj.EnglishName}}</span>
+                <span>{{obj.ChinaName}}</span>
+                <span>{{obj.price}}/份</span>
+            </p>
+            <span class="icon ion-ios-cart-outline" (click)="buycar($event,obj)">
+            </span>
+        </li>
+    </ul>
+    <img src="./assets/img/loading.gif" id="loadingImg"/>
+</div>

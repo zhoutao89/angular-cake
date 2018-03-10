@@ -1,0 +1,125 @@
+<div class="cakedelPage">
+	<div class="cakedel_head">
+		<i class="ion-chevron-left cake_head_left" (click)="goBackPage()"></i>
+		{{cnName}}
+		<i class="ion-share cake_head_right btn btn-lg" data-toggle="modal" data-target="#myModal"></i>
+	</div>
+	<div class="cakedel_main">
+		<div class="cakedel_main_t" *ngIf = "cakes">
+			<ul class="delImg" on-drag-left = "moveImg()">
+				<li><img src={{detailImg1}} *ngIf="detailImg1"/></li>
+				<li><img src={{detailImg2}} *ngIf="detailImg2"/></li>
+				<li><img src={{detailImg3}} *ngIf="detailImg3"/></li>
+			</ul>
+			<h3 class="enName">{{enName}}</h3>
+			<h4 class="cnName">{{cnName}}</h4>
+			<span class="cakedel_price">{{'￥'+ currentPrice}}</span>
+			<div class="cakedel_classify">
+				<span *ngFor = "let item of cakesRecom" (click)="cakeTypes()">{{item + ' >'}}</span>
+			</div>
+		</div> 
+		<div class="cakedel_main_c">
+			<div class="cakedel_main_ct" data-toggle="modal" data-target="#buyModal">
+				已选择: {{currentguige}}
+				<i class="ion-ios-arrow-forward"></i>
+			</div>
+			<div class="cakedel_main_cc">
+				<span><i class="ion-cube"></i>{{currentchicun}}</span>
+				<span><i class="ion-person-stalker"></i>{{currentpeoplenumver}}</span>
+				<span><i class="ion-fork"></i>{{currentcanju}}</span>
+				<span><i class="ion-clock"></i>最早明天9:30配送</span>
+			</div>
+			<div class="cakedel_main_cb">
+				<div>
+					<i class="ion-ios-snowy"></i>
+					保鲜条件  0-4℃保藏10小时, 5℃食用为佳
+				</div>
+				<div>
+					<img src="./assets/img/candy_1.jpg" class="tiandu">
+					参考甜度
+					<div *ngIf = "cakesSweet" class="sweetShow">
+					<img *ngFor = "let item of cakesSweet" src="./assets/img/candy_1.jpg"/>
+					<img *ngFor = "let item of cakaesSweetNo" src="./assets/img/candy_0.jpg"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tianchong"></div>
+		<div class="cakedel_main_b">
+			<h4>商品详情</h4>
+
+			<img src={{detailImgA}} *ngIf="detailImgA"/>
+			<img src={{detailImgB}} *ngIf="detailImgB"/>
+			<img src={{detailImgC}} *ngIf="detailImgC"/>
+		</div>
+		<div class="cakedel_notice">以上图片仅供参考，请以收到实物为准</div>
+
+		<!-- 分享弹窗 -->
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="mainDel_share">
+						<h3>分享到</h3>
+						<div class="mainDel_shareOne">
+							<img src="./assets/img/wechat.jpg" alt="">
+							<span>微信好友</span>
+						</div>
+						<div>
+							<img src="./assets/img/frend.jpg" alt="">
+							<span>朋友圈</span>
+						</div>
+						<div>
+							<img src="./assets/img/weibo.jpg" alt="">
+							<span>新浪微博</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 蛋糕尺寸选择模态框 -->
+		
+		<!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#byModal">开始演示模态框</button> -->
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog buyTC">
+				<div class="modal-content buyshow">
+					<div class="buyshow_t">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">{{'￥' + currentPrice}}</h4>
+					</div>
+					<div class="buyshow_c">
+						<div class="buyshow_ct">
+							<div class="buyshow_ctl"><img src={{currentChicunImg}} /></div>
+							<div class="buyshow_ctr">
+								<span><i class="ion-cube"></i>{{currentchicun}}</span>
+								<span><i class="ion-person-stalker"></i>{{currentpeoplenumver}}</span>
+								<span><i class="ion-fork"></i>{{currentcanju}}</span>
+								<span><i class="ion-clock"></i>最早明天9:30配送</span>
+							</div>
+						</div>
+						<div class="buyshow_cc">
+							<div class="buyshow_cct">商品规格</div>
+							<div class="buyshow_csel">
+								<span *ngFor = "let item of guige;let idx = index" (click)="selectGuige(idx)" [class.selectGuige] = "guigeId ==idx">
+									{{item}}
+									<i class="icon ion-checkmark-round selectGou" *ngIf = "guigeId ==idx"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="buyshow_b">
+						<button type="button" class="btn nowBuyBtn" (click) = 'addToCar()'>立即购买</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<ul class="cakedel_foot">
+		<li class="cakedel_foot_l"><a routerLink = '/cakecar'><i class="ion-android-cart" id="shopCart"></i><div class="cartNum">{{cartNumber}}</div></a></li>
+		<li class="cakedel_foot_c btn btn-lg" data-toggle="modal" data-target="#buyModal">立即购买</li>
+		<li class="cakedel_foot_r" id="addToCart" (click) = 'flyToCar()'>加入购物车</li>
+	</ul>
+	<img src="./assets/img/loading.gif" id="loadingImg"/>
+</div>
+

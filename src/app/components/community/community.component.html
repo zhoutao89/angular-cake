@@ -1,0 +1,18 @@
+<div class="communityPage">
+	<div class="header">
+		社区
+	</div>
+	<div class="main">
+		<ul class="main_nav">
+			<li (click)="zhikePageShow()"><span [class.active]="zhikeShow == true">21客志</span></li>
+			<li (click)="shudongPageShow()"><span [class.active]="shudongShow == true">树洞</span></li>
+		</ul>
+		<div class="main_content">
+			<zhikecomponent *ngIf="zhikeShow"></zhikecomponent>
+			<shudongcomponent *ngIf="shudongShow"></shudongcomponent>
+		</div>
+	</div>
+	<div class="footer">
+		<app-publicfooter></app-publicfooter>
+	</div>
+</div>

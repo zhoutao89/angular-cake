@@ -1,0 +1,130 @@
+<div class="order_box">
+    <div class="o_header">
+        <i class="icon ion-chevron-left" routerLink="/cakecar"></i>
+        订单确认
+    </div>
+    <div class="o_container">
+        <div class="address" >
+            <i></i>
+            <div class="address_text">
+                <div class="address_content" routerLink="/address" >
+                    <i class="icon ion-plus-round"></i>
+                    {{user}}
+                </div>
+                
+            </div>
+            <i></i>
+        </div>
+        <div class="pro_img">
+            <ul class="pro_list">
+                <li *ngFor="let obj of orderlist;let idx = index;">
+                    <img src={{obj.imgurl}} alt="" />
+                    <div class="price_box">
+                        <span>{{obj.sta}}磅</span>
+                        <div>
+                            <span class="span1">￥{{obj.price}}</span>
+                            <span class="span2">x{{obj.qty}}</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <ul class="button_list">
+            <li class="sel">
+                <span class="o_left">
+                    <i class="icon ion-clock"></i>
+                    配送时间
+                </span>
+                <span class="o_right">次日
+                    <select name="" id="" [(ngModel)]="time">
+                        <option value="8:00">8:00</option>
+                        <option value="9:00">9:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                        <option value="22:00">22:00</option>
+                        <option value="23:00">23:00</option>
+                        <option value="24:00">24:00</option>
+
+                    </select>
+                </span>
+            </li>
+            <li>
+                <span class="o_left">
+                    
+                    优享卷/尊享卡
+                </span>
+                <span class="o_right">
+                    无可用
+                    <i class="icon ion-chevron-right"></i>
+                </span>
+            </li>
+            <li>
+                <span class="o_left">
+                    
+                    代金卡(不能与优惠卷同时使用)
+                </span>
+                <span class="o_right">
+                    未使用
+                    <i class="icon ion-chevron-right"></i>
+                </span>
+            </li>
+        </ul>
+        <div class="pay_way">
+            <h6>支付方式</h6>
+            <ul class="payment">
+                <li>
+                    <span class="p1">余额支付(￥0)</span>
+                    <span class="p2"><i></i></span>
+                </li>
+                <li class="pay_icon">
+                    <img src="../../../assets/img/o4.png"  alt="" />
+                    <span>手机支付宝</span>
+                    <span class="pay_active"><i></i></span>
+                </li>
+                <li class="pay_icon" >
+                    <img src="../../../assets/img/o5.png" alt="" />
+                    <span>京东支付</span>
+                    <span class="pay_active"><i style="background:url(../../../assets/img/c10.png)"></i></span>
+                </li>
+                <li class="pay_icon">
+                    <img src="../../../assets/img/o6.jpg" alt="" />
+                    <span>银行卡支付</span>
+                    <span class="pay_active"><i style="background:url(../../../assets/img/c10.png)"></i></span>
+                </li>
+                <li class="invoice">
+                    <span class="f1">发票</span>
+                    <span class="f2">不需要<i></i></span>
+                </li>
+            </ul>
+        </div>
+        <div class="message">
+            <h6>订单留言</h6>
+            <div class="message_text">
+                <textarea name="meme" id="" cols="30" rows="10" placeholder="请留下你对订单或商品的要求"></textarea>
+            </div>
+            
+        </div>
+        <div class="pay_money">
+                <h6>金额明细</h6>
+                <ul>
+                    <li><span>商品总额</span><span>￥{{this.totalPrice}}</span></li>
+                    <li><span>配送服务费</span><span>￥4.00</span></li>
+                </ul>
+        </div>
+    </div>
+    <div class="o_footer">
+        <button (click)="buy()" routerLink="/myorder">下单</button>
+        <span class="footer1">共￥{{this.totalPrice+4}}<span></span></span>
+    </div>
+</div>

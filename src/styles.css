@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~element-angular/theme/index.css";
+
+
+html,body{height:100%;}
+*{margin:0;padding:0;box-sizing:border-box;}
+ul,li{list-style:none;}
+
+clearfix:after{
+    content:"";
+    display:blcok;
+    height:0;
+    clear:both;
+    overflow:hidden;
+    visibility:hidden;
+    zoom:1;
+}
+

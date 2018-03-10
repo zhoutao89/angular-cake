@@ -1,0 +1,10 @@
+{
+    "type":[
+        {"name":"蛋糕","url":"cakeclassify"},
+        {"name":"冰淇淋","url":"iceclassify"},
+        {"name":"小切块","url":"slicingclassify"},
+        {"name":"常温蛋糕","url":"warmcake"},
+        {"name":"咖啡","url":"coffee"},
+        {"name":"礼品","url":"gift"}
+    ]
+}

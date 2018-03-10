@@ -1,0 +1,8 @@
+.all{
+    height:100%;position:relative;
+    .hint{
+        position:absolute;left:50%;top:45%;width:70%;height:10%;background:#ccc;text-align:center;
+        transform:translate(-50%,0);border-radius:0.133333rem;
+        span{display:inline-block;width:100%;height:100%;font-size:0.666666rem;line-height:1.8rem;}
+    }
+}
